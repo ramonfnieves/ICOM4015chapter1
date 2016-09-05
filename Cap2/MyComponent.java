@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.Random;
 
 import javax.swing.JComponent;
 
@@ -31,6 +32,14 @@ public class MyComponent extends JComponent {
 		topLeftCar.setPosition(getWidth()-60, getHeight()-30);
 		topLeftCar.setColor(Color.ORANGE);
 		topLeftCar.draw(g);
+		
+		Random r = new Random();
+		topLeftCar.setPosition(r.nextInt(getWidth()-60), r.nextInt(getHeight()-30));
+		topLeftCar.setColor(Color.MAGENTA);
+		topLeftCar.draw(g);
+
+		
+		
 		
 	/*	Espacio vs Tiempo
 	 * 
